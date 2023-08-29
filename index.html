@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header class="header">¡JUGUEMOS al PIEDRA, PAPEL o TIJERA!</header>
+    <!-- Main -->
+    <div class="contenedor">
+        <main class="main">
+            <div class="nombre">
+                <input type="text" name="nombre" id="nombre" title="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="comenzar">
+                <button class="comienza" type="submit" id="inicio" onclick="cargar()">COMENZAR</button>
+            </div>
+            <div class="elementos-todos">
+                <p class="contadores" id="usuario">Usuario</p>
+                <div class="elementos" id="'elementos">
+                    <img src="./src/piedra.png" id="piedra" class="elemento" alt="piedra" onclick="ronda('piedra')">
+                     <img src="./src/papel.png" id="papel" class="elemento" alt="papel" onclick="ronda('papel')">
+                    <img src="./src/tijera.png" id="tijera" class="elemento" alt="tijera" onclick="ronda('tijera')">
+                </div>
+                <p class="contadores" id="pc">PC</p>
+            </div>
+            <div class="resultado">
+                <p id="resultado" placeholder="RESULTADO">RESULTADO</p>
+            </div>
+            <div class="reiniciar">
+                <button id="reiniciar" onclick="reiniciar()">REINICIAR</button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
